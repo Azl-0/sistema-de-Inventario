@@ -1,0 +1,131 @@
+/* Sección Sobre el Sistema */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 10%;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h1 {
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: larger;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-image img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+/* Sección Características */
+.features-section {
+    padding: 60px 10%;
+    background-color: #123a63;
+    text-align: center;
+}
+
+.features-section h2 {
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #0055a5;
+    margin-bottom: 10px;
+}
+
+
+/* Contenedores de sección */
+.section-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.section-container h2 {
+  text-align: center;
+  color: #004aad;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Grid de tarjetas */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+  color: #004aad;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}

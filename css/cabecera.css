@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*da el efecto de bajar o subir mediante los menus*/
+html {
+  scroll-behavior: smooth;
+}
+/*arregla el espacio entre bajar y subir en el menu*/
+#about,
+#recursos,
+#caracteristicas,
+#contactanos{
+  scroll-margin-top: 50px;
+}
+
+/*_______________________________*/
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #001f3f; /* color del menu */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Carrusel a pantalla completa */
+.carousel-slide {
+  position: relative; /* no absolute */
+  width: 100%;
+  height: 100vh; /* pantalla completa */
+  overflow: hidden;
+}
+
+/*para que se vea ocapo*/
+.carousel-slide::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(50, 98, 143, 0.877); /* color de la opacidad*/
+  z-index: 1;
+}
+
+/*imagenes del carusel*/
+.carousel-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.carousel-slide img.active {
+  opacity: 0.2; /* para definir el nivel de opacidad de las imagenes del carrusel*/ 
+  z-index: 1;
+  background-color: #000000;
+}
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  z-index: 2;
+}
+
+.carousel-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.carousel-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+/*________________________________________*/
+
+/*cabecera*/
+.nav{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+
+/*logo*/
+.logo{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  padding-right: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+/*menus*/
+.navbar{
+  width: 50%;
+  padding-left: 253px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navbar  a.active {
+  border-bottom: 4px solid #001f3f;
+}
+.navbar a:hover {
+  border-bottom: 4px solid #ffffff;
+}
+
+.login-btn {
+  padding: 5px 10px;
+  background-color: #3d5e6b;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+}

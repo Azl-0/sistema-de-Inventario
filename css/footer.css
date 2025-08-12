@@ -1,0 +1,60 @@
+/*footer*/
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  padding-top: 40px;
+
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+
+/*iconos de redes sociales*/
+.social-icons {
+  margin-top: 30px;
+    width: 30%;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  background-color: #ffffff20; /* blanco con transparencia */
+  color: white;
+  border-radius: 50%; /* círculo */
+  text-align: center;
+  line-height: 40px; /* verticalmente centrado */
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.social-icons a:hover {
+  background-color: #46abbd; /*color de fondo de los iconos*/
+  color: white;
+  transform: scale(1.1);
+}
+
+/*___________________________________________*/
+
+
+/*mapa*/
+.mapa{
+    width: 70%;
+}
+
+/*___________________________________________*/
+
+
