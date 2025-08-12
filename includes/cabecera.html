@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cabecera.css">
+</head>
+<body>
+    <!-- cabecera/ menu-->
+    <header>
+      <div class="nav">
+          <div class="logo">
+            <div><img src="../images/escudo.gif" width="40px"></div>
+            <div><p class="">ISTP ARGENTINA</p></div>
+          </div>
+          <div class="navbar">
+              <ul class="nav-links">
+                <li><a href="../paginas/index.php" class="active">Home</a></li>
+                <li><a href="../paginas/about.php" class="active">About</a></li>
+                
+                <!-- modal onclick para abrir el login emergente -->
+                <li class="nav-item">
+                  <a href="#" class="login-btn" onclick="abrirModal()">Login</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+
+    </header>
+    <!-- banner/carousel-->
+    <section class="carousel">
+      <div class="carousel-slide" id="carousel-slide">
+            <img src="../images/banner1.jpg" alt="Banner 1" class="active">
+            <img src="../images/banner2.jpg" alt="Banner 2">
+            <img src="../images/banner3.jpg" alt="Banner 3">
+          <div class="carousel-text">
+            <h1>SISTEMA WEB<br>DE INVENTARIO DE EQUIPOS</h1>
+            <p>ISTP ARGENTINA<br><small>Sistema de inventario para los laboratorios del ISTP ARGENTINA</small></p>
+          </div>
+      </div>
+    </section>
+      <!-- js/ para que se mueva el carousel-->
+    <script src="js/carousel.js"></script>
+</body>
+</html>

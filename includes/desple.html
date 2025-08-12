@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../css/panel.css" rel="stylesheet">
+  <style>
+    .texto{
+      text-align: center;
+      justify-content: center;
+      border-radius: 2px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+    <!-- Topbar -->
+  <nav class="navbar top-bar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+        <i class="bi bi-list"></i>
+      </button>
+<!-- cabecera -->
+      <a class="navbar-brand text-white brand" href="#">
+        <img src="../images/escudo.gif" width="36" alt="logo">
+        ISTP ARGENTINA — Administrador
+      </a>
+
+      <div class="ms-auto d-flex align-items-center gap-3">
+        <span class="text-white small">Bienvenido, Administrador</span>
+        <a href="../paginas/admin.php" class="btn btn-sm btn-light">Inicio</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar / menus-->
+  <div class="offcanvas offcanvas-start" id="sidebar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menú</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column p-0">
+      <nav class="nav flex-column p-3 gap-1">
+        <a class="nav-link" href="usuarios.php"><i class="bi bi-people-fill me-2"></i>Gestión de usuarios</a>
+        <a class="nav-link" href="equipos.php"><i class="bi bi-laptop me-2"></i>Gestión de equipos</a>
+        <a class="nav-link" href="movimientos.php"><i class="bi bi-arrow-left-right me-2"></i>Movimientos</a>
+        <a class="nav-link" href="reportes.php"><i class="bi bi-file-earmark-text me-2"></i>Generar reportes</a>
+        <a class="nav-link" href="categorias.php"><i class="bi bi-tags-fill me-2"></i>Categorías</a>
+        <a class="nav-link" href="busqueda.php"><i class="bi bi-upc-scan me-2"></i>Búsqueda por código</a>
+      </nav>
+
+      <div class="sidebar-footer mt-auto">
+        <div class="px-3">
+          <small>Usuario: <strong>administrador</strong></small><br>
+          <a href="admin.php" class="small text-decoration-none">Inicio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS  para el menu desplegable-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

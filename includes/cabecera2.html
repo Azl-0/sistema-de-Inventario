@@ -1,0 +1,31 @@
+<!-- Cabecera con menú hamburguesa -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="../images/escudo.gif" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+      ISTP ARGENTINA
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <?php if($rol == 'Administrador') { ?>
+          <li class="nav-item"><a class="nav-link" href="#">Gestión de Usuarios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Asignar Permisos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Equipos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Movimientos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Reportes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Configuraciones</a></li>
+        <?php } else if($rol == 'Asistente') { ?>
+          <li class="nav-item"><a class="nav-link" href="#">Agregar Equipos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Editar Equipos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Movimientos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Reportes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solicitudes</a></li>
+        <?php } ?>
+        <li class="nav-item"><a class="nav-link text-danger" href="../logout.php">Salir</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
